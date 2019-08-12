@@ -102,7 +102,8 @@ Make sure you're using the right configuration Win64 or PlatformIO in VSCode, ch
 
 ##### - PlatformIO does not support debugging error?
 
-Open any source code file and change the VSCode configuration to Win64.
+Open any source code file and change the VSCode Debug configuration to Windows. <br/>
+<img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_debug.png" />
 
 ##### - Folder errors, Cannot find files, Fail to compile C++? <br/>
 VSCode sometimes use full paths to refence folders, you need to change the following files and fix folder path references: <br/>
