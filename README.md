@@ -52,8 +52,7 @@ Open `/tool/build.cmd` and change the `CALL` command to your local `vcvarsall.ba
 Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.libsdl.org/download-2.0.php and extract.  <br/>
 Copy the files `/SDL2-2.0.10/include/*` and `/SDL2-2.0.10/lib/x64/*` to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
 Download lv_arduino @ https://github.com/littlevgl/lv_arduino and extract. <br/>
-Copy the `/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
-Copy `ThisProjectFolder/lvgl.h` file to `ThisProjectFolder/lvgl/lvgl.h` . <br/>
+Copy the `/src/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
 Copy `ThisProjectFolder/lv_drv_conf.h` file to `ThisProjectFolder/lvgl/src/lv_drv_conf.h` . <br/>
 Make a new folder `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
 Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract.  . <br/>
@@ -97,7 +96,7 @@ This is a template that runs the same sample code from littlevgl/lv_platformio h
 ##### - Intelisense isn`t working / Fixing VSCode Intelisense for both PlatformIO+CPP. <br/>
 
 After successfully execute "PlatformIO: Build", open the `".platformIO/.vscode/c_cpp_properties.json"`, copy the IncludePath and BrowsePath node values to `".vscode/c_cpp_properties.json"`. Restart VSCode. <br/>
-Make sure you`re using the right configuration Win64 or PlatformIO in VSCode, check the VSCode bottom-right statusbar to see what is the current configuration. <br/>
+Make sure you're using the right configuration Win64 or PlatformIO in VSCode, check the VSCode bottom-right statusbar to see what is the current configuration. <br/>
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_config.png" />
 
 ##### - Folder errors, Cannot find files, Fail to compile C++? <br/>
