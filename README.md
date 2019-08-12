@@ -50,13 +50,14 @@ Basic stuff but if any of prerequisites are not working this project will not wo
 Download this project and extract. <br/>
 Open `/tool/build.cmd` and change the `CALL` command to your local `vcvarsall.bat` path . (to where is your MSVC C++ compiler, ex: `C:\Program Files\Microsoft Visual Studio\2019\VC\Auxiliary\Build\vcvarsall.bat` ) <br/>
 Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.libsdl.org/download-2.0.php and extract.  <br/>
-Copy the files `/SDL2-2.0.10/include/*` and `/SDL2-2.0.10/lib/x64/*` to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
+Copy `/SDL2-2.0.10/include/*` and `/SDL2-2.0.10/lib/x64/*` files to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
 Download lv_arduino @ https://github.com/littlevgl/lv_arduino and extract. <br/>
-Copy the `/src/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
+Copy `/src/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
 Copy `ThisProjectFolder/lv_drv_conf.h` file to `ThisProjectFolder/lvgl/src/lv_drv_conf.h` . <br/>
 Make a new folder `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
 Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract.  . <br/>
-Copy the `/display` and `/indev` folders to `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
+Copy `/display` and `/indev` folders to `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
+Copy `/win_drv.c` and `/win_drv.h` files to `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
 
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/folder_tree.png" />
 
