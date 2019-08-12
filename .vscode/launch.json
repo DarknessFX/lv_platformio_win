@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Debug (Windows)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "logging": {
+              "exceptions": true,
+              "moduleLoad": false,
+              "programOutput" : true,
+              "engineLogging": false,
+              "trace": true,
+              "traceResponse": false,
+              "browserStdOut": true,
+            },
+            "program": "${workspaceFolder}/tool/bin/${workspaceFolderBasename}.exe",
+            "preLaunchTask": "Build C++ project",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+        }
+    ]
+}
