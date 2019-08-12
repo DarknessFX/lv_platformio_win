@@ -67,7 +67,7 @@ Change `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"` to fix head
 - `/lvgl/src/lv_drivers/display/monitor.h` <br/>
 - `/lvgl/src/lv_drivers/indev/keyboard.h` <br/>
 - `/lvgl/src/lv_drivers/indev/mouse.h` <br/>
-- `/lvgl/src/lv_drivers/indev/mousewheel.h` <br/>
+- `/lvgl/src/lv_drivers/indev/mousewheel.h` <br/> <br/>
 Edit `ThisProjectFolder/lvgl/src/lc_drivers/display/monitor.c` :
 ```
 Line 371:     m->window = SDL_CreateWindow("TFT Simulator",
@@ -77,7 +77,7 @@ Line 371:     m->window = SDL_CreateWindow("TFT Simulator",
 Line 378:     m->renderer = SDL_CreateRenderer(m->window, -1, SDL_RENDERER_SOFTWARE);
 ```
 
-If you`re not using a M5Stack, then you will need to edit the `/.platformio/platformio.ini` and change to your ESP32 board configs.
+If you're not using a M5Stack, then you will need to edit the `/.platformio/platformio.ini` and change to your ESP32 board configs.
 
 ### How to use
 
@@ -93,23 +93,23 @@ This is a template that runs the same sample code from littlevgl/lv_platformio h
 
 ## FAQ
 
-######- Intelisense isn`t working / Fixing VSCode Intelisense for both PlatformIO+CPP. <br/>
+###### - Intelisense isn`t working / Fixing VSCode Intelisense for both PlatformIO+CPP. <br/>
 
 After successfully execute "PlatformIO: Build", open the `".platformIO/.vscode/c_cpp_properties.json"`, copy the IncludePath and BrowsePath node values to `".vscode/c_cpp_properties.json"`. Restart VSCode. <br/>
 Make sure you`re using the right configuration Win64 or PlatformIO in VSCode, check the VSCode bottom-right statusbar to see what is the current configuration. <br/>
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_config.png" />
 
-######- Folder errors, Cannot find files, Fail to compile C++? <br/>
+###### - Folder errors, Cannot find files, Fail to compile C++? <br/>
 VSCode sometimes use full paths to refence folders, you need to change the following files and fix folder path references: <br/>
-  `.vscode/c_cpp_properties.json` (Win64 node, change IncludePath and CompilerPath to your local paths) <br/>
-  `lv_platformio_win.code-workspace`  (delete the PATH node to autofix the references on next VSCode start) <br/>
-  `tool/build.cmd` (change CALL command to your local vcvarsall.bat path) <br/>
+  `.vscode/c_cpp_properties.json` (Win64 node, change IncludePath and CompilerPath to your local paths). <br/>
+  `lv_platformio_win.code-workspace`  (delete the PATH node to autofix the references on next VSCode start). <br/>
+  `tool/build.cmd` (change CALL command to your local vcvarsall.bat path). <br/>
 
-######- Why the .platformio folder and not keep the platformio.ini in project root folder? <br/>
-Is a small hack that allows VSCode to run as C++ Project (build, debug, launch) while keeping all the PlatformIO features (compile, upload, monitor).  <br/>
+###### - Why the .platformio folder and not keep the platformio.ini in project root folder? <br/>
+Is a small hack that allows VSCode to run as C++ Project (compile, debug, launch) while keeping all the PlatformIO features (build, upload, monitor).  <br/>
 PlatformIO is aggressive in overwriting and owning the VSCode project folder, this hack fix this behaviour. <br/>
 
-######- Fail to compile with TFT_eSPI error? <br/>
+###### - Fail to compile with TFT_eSPI error? <br/>
 M5Stack have its own TFT_eSPI code, if you find errors or blank screen uploading your code you may need to remove TFT_eSPI library from PlatformIO folder (`%UserProfile%\.platformio\lib\TFT_eSPI_?\`) to avoid conflicts. <br/>
 
 ## Versioning
