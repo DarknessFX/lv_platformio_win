@@ -135,13 +135,13 @@ namespace FX {
   
 int SDL::begin() {
   SDL_Init(SDL_INIT_VIDEO);              // Initialize SDL2
-  IMG_Init(IMG_INIT_JPG);
+  //IMG_Init(IMG_INIT_JPG);
 
   //background = IMG_Load(GetFullPathC("res\\img_win\\m5stack_body.jpg"));
   //esp32_window = IMG_Load(GetFullPathC("res\\img_win\\m5stack_logo.jpg"));
 
-  background = IMG_Load(IMG_BODY);
-  esp32_window = IMG_Load(IMG_LOGO);
+  //background = IMG_Load(IMG_BODY);
+  //esp32_window = IMG_Load(IMG_LOGO);
   
   create_window();
   create_objects();
@@ -156,7 +156,7 @@ void SDL::end() {
   SDL_FreeSurface(background);
   SDL_FreeSurface(esp32_window);
 
-  IMG_Quit();
+  //IMG_Quit();
   SDL_Quit();
 }
 
