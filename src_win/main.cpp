@@ -5,7 +5,7 @@
 
 // SDL Headers
 #include <../lib/win/SDL2/SDL.h>
-#include <../lib/win/SDL2/SDL_image.h>
+//#include <../lib/win/SDL2/SDL_image.h>
 
 // LittlevGL
 #include "../lv_conf.h"
