@@ -1,0 +1,24 @@
+{
+	"folders": [
+    {
+      "name": ".platformio",
+      "path": ".platformio"
+    },
+    {
+      "name": "lv_platformio_win",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.tpp": "cpp",
+      "xstring": "cpp",
+      "lvgl.h": "c",
+      "sdl.h": "c"
+    },
+    "terminal.integrated.env.windows": {
+      "PATH": "C:\\Users\\DFX\\.platformio\\penv\\Scripts;C:\\Users\\DFX\\.platformio\\penv;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\VulkanSDK\\Bin;C:\\Users\\DFX\\.platformio\\packages\\framework-espidf\\tools;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Common Files\\Autodesk Shared;D:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\Program Files\\CMake\\bin;D:\\Program Files\\Python27amd64\\Scripts;D:\\Program Files\\ESP32\\tools\\bin;D:\\Program Files\\ESP32\\mconf-idf;C:\\Users\\DFX\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\DFX\\.platformio\\packages\\framework-espidf\\tools;;C:\\WINDOWS;C:\\WINDOWS\\system32;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\Program Files\\VulkanSDK\\Bin;C:\\Users\\DFX\\.platformio\\packages\\framework-espidf\\tools;C:\\Program Files (x86)\\GtkSharp\\2.12\\bin;C:\\Program Files\\Common Files\\Autodesk Shared;D:\\Program Files\\Oculus\\Support\\oculus-runtime;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;D:\\Program Files\\CMake\\bin;D:\\Program Files\\Python27amd64\\Scripts;D:\\Program Files\\ESP32\\tools\\bin;D:\\Program Files\\ESP32\\mconf-idf;C:\\Users\\DFX\\AppData\\Local\\Microsoft\\WindowsApps;D:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\DFX\\.platformio\\packages\\framework-espidf\\tools;",
+      "PLATFORMIO_CALLER": "vscode"
+    },
+  }
+}
