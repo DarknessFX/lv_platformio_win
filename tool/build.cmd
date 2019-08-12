@@ -12,7 +12,7 @@ IF EXIST "tool\bin\*.exe" ( DEL /Q "tool\bin\*.*" )
 
 REM Compile C or CPP from main folder
 SET compilerflags=/nologo /Ox /Zi /Gd /EHsc /std:c++latest /I inc /I lib/win/SDL2 /I lvgl /AWAIT /UTF-8 /w
-SET linkerflags=/OUT:"tool\bin\%1.exe" /LIBPATH:"lib/win/SDL2" /LIBPATH:"lvgl" /PDB:"tool\bin\%1.pdb" /DEBUG:FULL /DYNAMICBASE "SDL2.lib" "SDL2main.lib" "SDL2_image.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "winspool.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "odbc32.lib" "odbccp32.lib" /MACHINE:X64 /INCREMENTAL /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /ERRORREPORT:PROMPT /NOLOGO /TLBID:1 /MANIFEST /NXCOMPAT
+SET linkerflags=/OUT:"tool\bin\%1.exe" /LIBPATH:"lib/win/SDL2" /LIBPATH:"lvgl" /PDB:"tool\bin\%1.pdb" /DEBUG:FULL /DYNAMICBASE "SDL2.lib" "SDL2main.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "winspool.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "odbc32.lib" "odbccp32.lib" /MACHINE:X64 /INCREMENTAL /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /ERRORREPORT:PROMPT /NOLOGO /TLBID:1 /MANIFEST /NXCOMPAT
 
 REM LVWIN - Compile Windows CPP sources
 SET LVWIN_SOURCE=
