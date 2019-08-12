@@ -50,17 +50,24 @@ Basic stuff but if any of prerequisites are not working this project will not wo
 Download this project and extract. <br/>
 Open `/tool/build.cmd` and change the `CALL` command to your local `vcvarsall.bat` path . (to where is your MSVC C++ compiler, ex: `C:\Program Files\Microsoft Visual Studio\2019\VC\Auxiliary\Build\vcvarsall.bat` ) <br/>
 Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.libsdl.org/download-2.0.php and extract.  <br/>
-Copy the files `/SDL2-2.0.10/include/\*` and `/SDL2-2.0.10/lib/x64/\*` to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
+Copy the files `/SDL2-2.0.10/include/*` and `/SDL2-2.0.10/lib/x64/*` to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
 Download lv_arduino @ https://github.com/littlevgl/lv_arduino and extract. <br/>
 Copy the `lvgl.h` folder content to `ThisProjectFolder/lvgl` . <br/>
 Copy the `/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
 Copy `ThisProjectFolder/lv_drv_conf.h` to `ThisProjectFolder/lvgl/src/lv_drv_conf.h` . <br/>
 Make a new folder `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
-Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract, copy the `/display` and `/indev` folders to `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
+Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract.  . <br/>
+Copy the `/display` and `/indev` folders to `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
 
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/folder_tree.png" />
 
-Change `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"` to fix header path in monitor.h , mouse.h , keyboard.h , mousewheel.h, win_drv.h and win_drv.c . <br/>
+Change `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"` to fix header path in: <br/>
+- `/lvgl/src/lv_drivers/win_drv.h` <br/>
+- `/lvgl/src/lv_drivers/win_drv.c` <br/>
+- `/lvgl/src/lv_drivers/display/monitor.h` <br/>
+- `/lvgl/src/lv_drivers/indev/keyboard.h` <br/>
+- `/lvgl/src/lv_drivers/indev/mouse.h` <br/>
+- `/lvgl/src/lv_drivers/indev/mousewheel.h` <br/>
 Edit `ThisProjectFolder/lvgl/src/lc_drivers/display/monitor.c` :
 ```
 Line 371:     m->window = SDL_CreateWindow("TFT Simulator",
