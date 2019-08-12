@@ -61,7 +61,7 @@ Copy `/win_drv.c` and `/win_drv.h` files to `ThisProjectFolder/lvgl/src/lv_drive
 
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/folder_tree.png" />
 
-Change `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"` to fix header path in: <br/>
+Change ** second line of ** `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"` to fix header path in: <br/>
 - `/lvgl/src/lv_drivers/win_drv.h` <br/>
 - `/lvgl/src/lv_drivers/win_drv.c` <br/>
 - `/lvgl/src/lv_drivers/display/monitor.h` <br/>
@@ -104,6 +104,10 @@ Make sure you're using the right configuration Win64 or PlatformIO in VSCode, ch
 
 Open any source code file and change the VSCode Debug configuration to Windows. <br/>
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_debug.png" />
+
+##### - fatal error C1083: Cannot open include file: 'lvgl/lvgl.h'
+
+You need to change the ** second line of ** `#include "lvgl/lvgl.h"` to `#include "../../../lvgl/lvgl.h"`.
 
 ##### - Folder errors, Cannot find files, Fail to compile C++? <br/>
 VSCode sometimes use full paths to refence folders, you need to change the following files and fix folder path references: <br/>
