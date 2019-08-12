@@ -1,0 +1,6 @@
+.git_img
+.platformio\.pio
+.platformio\.vscode
+lib\win\SDL2
+lvgl\src
+tool\bin
