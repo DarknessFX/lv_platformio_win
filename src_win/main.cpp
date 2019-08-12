@@ -80,14 +80,6 @@ extern char * GetFullPathC(const char * AppendPath = "") {
   }
   return strncat(m_path, AppendPath, strlen(AppendPath));
 }
-
-/*// Access external libraries at \lib folder.
-void FixDLLPath() {
-  printf("DLL Path Fix, adjusting...\n", APP_NAME);
-  SetDefaultDllDirectories(0x00001000);
-  AddDllDirectory(ConvertString(GetFullPath().append("tool\\\\bin\\\\lib")));
-  printf("DLL Path Fix, done!\n", APP_NAME);
-}*/
 //**********************************************************************
 #pragma endregion
 
