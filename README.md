@@ -22,18 +22,18 @@ This project is based on littlevgl/lv_platformio https://github.com/littlevgl/lv
 
 ### Depends
 
-- Windows:
-VSCode - https://code.visualstudio.com/ <br/>
-C/C++ Extension and Compiler - https://code.visualstudio.com/docs/languages/cpp <br/>
-PlatfomIO - https://docs.platformio.org/en/latest/ide/vscode.html <br/>
-libSDL2 - https://www.libsdl.org/ <br/>
-libSDL2_Image - https://www.libsdl.org/projects/SDL_image/ <br/>
-LittlevGL Arduino - https://github.com/littlevgl/lv_arduino <br/>
-LittlevGL Drivers - https://github.com/littlevgl/lv_drivers <br/>
+Windows: <br/>
+- VSCode - https://code.visualstudio.com/ <br/>
+- C/C++ Extension and Compiler - https://code.visualstudio.com/docs/languages/cpp <br/>
+- PlatfomIO - https://docs.platformio.org/en/latest/ide/vscode.html <br/>
+- libSDL2 - https://www.libsdl.org/ <br/>
+- libSDL2_Image - https://www.libsdl.org/projects/SDL_image/ <br/>
+- LittlevGL Arduino - https://github.com/littlevgl/lv_arduino <br/>
+- LittlevGL Drivers - https://github.com/littlevgl/lv_drivers <br/>
 
-- Arduino/ESP32 PlatformIO Libraries:
-M5Stack - https://docs.platformio.org/en/latest/boards/espressif32/m5stack-core-esp32.html (ignore if using another ESP32 with another display).
-LittlevGL Arduino - https://platformio.org/lib/show/6228/lv_arduino
+Arduino/ESP32 PlatformIO Libraries: <br/>
+- M5Stack - https://docs.platformio.org/en/latest/boards/espressif32/m5stack-core-esp32.html (ignore if using another ESP32 with another display).
+- LittlevGL Arduino - https://platformio.org/lib/show/6228/lv_arduino
 
 ### Prerequisites
 
@@ -48,13 +48,13 @@ Basic stuff but if any of prerequisites are not working this project will not wo
 ### Installing
 
 Download this project and extract. <br/>
-- Open /tool/build.cmd and change the CALL command to your local vcvarsall.bat path . (to where is your MSVC C++ compiler)
+Open /tool/build.cmd and change the CALL command to your local vcvarsall.bat path . (to where is your MSVC C++ compiler) <br/>
 Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.libsdl.org/download-2.0.php and extract.  <br/>
-- Copy the files /SDL2-2.0.10/include/* and /SDL2-2.0.10/lib/x64/* to ThisProjectFolder/lib/win/SDL2, all *.h + *.dll + *.lib will be inside the lib/win/SDL2 folder. <br/>
+Copy the files /SDL2-2.0.10/include/* and /SDL2-2.0.10/lib/x64/* to ThisProjectFolder/lib/win/SDL2, all *.h + *.dll + *.lib will be inside the lib/win/SDL2 folder. <br/>
 Download lv_arduino @ https://github.com/littlevgl/lv_arduino and extract. <br/>
-- Copy the lvgl.h folder content to ThisProjectFolder/lvgl . <br/>
-- Copy the /src folder to ThisProjectFolder/lvgl (ex: ThisProjectFolder/lvgl/src ) . <br/>
-- Copy ThisProjectFolder/lv_drv_conf.h to ThisProjectFolder/lvgl/src/lv_drv_conf.h . <br/>
+Copy the lvgl.h folder content to ThisProjectFolder/lvgl . <br/>
+Copy the /src folder to ThisProjectFolder/lvgl (ex: ThisProjectFolder/lvgl/src ) . <br/>
+Copy ThisProjectFolder/lv_drv_conf.h to ThisProjectFolder/lvgl/src/lv_drv_conf.h . <br/>
 Make a new folder ThisProjectFolder/lvgl/src/lv_drivers . <br/>
 Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract, copy the /display and /indev folders to ThisProjectFolder/lvgl/src/lv_drivers . <br/>
 
@@ -75,8 +75,8 @@ If you're not using a M5Stack, then you will need to edit the /.platformio/platf
 ### How to use
 
 Always use the "lv_platformio_win.code-workspace" to open the project.  <br/>
-Change your C/C++ Configuration between Win64 or PlatformIO in VSCode at down-right statusbar. <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_config.png" /> <br/>
-Change your debug environment (if you have JTAG/debug tools) between Windows or PlatformIO Debug in VSCode at down-left statusbar. <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_debug.png" /> <br/>
+Change your C/C++ Configuration between Win64 or PlatformIO in VSCode at down-right statusbar. <br/> <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_config.png" /> <br/>
+Change your debug environment (if you have JTAG/debug tools) between Windows or PlatformIO Debug in VSCode at down-left statusbar. <br/> <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_debug.png" /> <br/>
 
 ### Features
 
