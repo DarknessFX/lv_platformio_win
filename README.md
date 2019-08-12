@@ -53,7 +53,7 @@ Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.lib
 Copy `/SDL2-2.0.10/include/*` and `/SDL2-2.0.10/lib/x64/*` files to `ThisProjectFolder/lib/win/SDL2`, all \*.h + \*.dll + \*.lib will be inside the `lib/win/SDL2 folder`. <br/>
 Download lv_arduino @ https://github.com/littlevgl/lv_arduino and extract. <br/>
 Copy `/src/src` folder to `ThisProjectFolder/lvgl` (ex: `ThisProjectFolder/lvgl/src` ) . <br/>
-Copy `/src/lvgl.h` file to `ThisProjectFolder/lvgl/src/lvgl.h` . <br/>
+Copy `/src/lvgl.h` file to `ThisProjectFolder/lvgl/lvgl.h` . <br/>
 Copy `ThisProjectFolder/lv_drv_conf.h` file to `ThisProjectFolder/lvgl/src/lv_drv_conf.h` . <br/>
 Make a new folder `ThisProjectFolder/lvgl/src/lv_drivers` . <br/>
 Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract.  . <br/>
