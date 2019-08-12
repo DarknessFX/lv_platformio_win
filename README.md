@@ -100,6 +100,10 @@ After successfully execute "PlatformIO: Build", open the `".platformIO/.vscode/c
 Make sure you're using the right configuration Win64 or PlatformIO in VSCode, check the VSCode bottom-right statusbar to see what is the current configuration. <br/>
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/change_config.png" />
 
+##### - PlatformIO does not support debugging error?
+
+You're running PlatformIO configuration when you press F5, open any source code file and change the VSCode configuration to Win64.
+
 ##### - Folder errors, Cannot find files, Fail to compile C++? <br/>
 VSCode sometimes use full paths to refence folders, you need to change the following files and fix folder path references: <br/>
   `.vscode/c_cpp_properties.json` (Win64 node, change IncludePath and CompilerPath to your local paths). <br/>
