@@ -32,7 +32,7 @@ Windows: <br/>
 - LittlevGL Drivers - https://github.com/littlevgl/lv_drivers <br/>
 
 Arduino/ESP32 PlatformIO Libraries: <br/>
-- M5Stack - https://docs.platformio.org/en/latest/boards/espressif32/m5stack-core-esp32.html (ignore if using another ESP32 with another display).
+- M5Stack - https://docs.platformio.org/en/latest/boards/espressif32/m5stack-core-esp32.html (ignore if using ESP32 with another display).
 - LittlevGL Arduino - https://platformio.org/lib/show/6228/lv_arduino
 
 ### Prerequisites
@@ -47,6 +47,7 @@ Basic stuff but if any of prerequisites are not working this project will not wo
 
 ### Installing
 
+```
 Download this project and extract. <br/>
 Open /tool/build.cmd and change the CALL command to your local vcvarsall.bat path . (to where is your MSVC C++ compiler) <br/>
 Download SDL2 Development Libraries @ SDL2-devel-2.0.10-VC.zip - https://www.libsdl.org/download-2.0.php and extract.  <br/>
@@ -59,6 +60,7 @@ Make a new folder ThisProjectFolder/lvgl/src/lv_drivers . <br/>
 Download lv_drivers @ https://github.com/littlevgl/lv_drivers and extract, copy the /display and /indev folders to ThisProjectFolder/lvgl/src/lv_drivers . <br/>
 
 <img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/folder_tree.png" />
+```
 
 Change #include "lvgl/lvgl.h" to #include "../../../lvgl/lvgl.h" to fix header path in monitor.h , mouse.h , keyboard.h , mousewheel.h, win_drv.h and win_drv.c . <br/>
 Edit ThisProjectFolder/lvgl/src/lc_drivers/display/monitor.c :
