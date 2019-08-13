@@ -125,6 +125,10 @@ PlatformIO is aggressive in overwriting and owning the VSCode project folder, th
 ##### - Fail to compile with TFT_eSPI error? <br/>
 M5Stack have its own TFT_eSPI code, if you find errors or blank screen uploading your code you may need to remove TFT_eSPI library from PlatformIO folder (`%UserProfile%\.platformio\lib\TFT_eSPI_?\`) to avoid conflicts. <br/>
 
+##### - Can I use this project without LittlevGL? <br/>
+Yes, the project is ready to run in SDL2-only mode, just remove LittlevGL references from the source code, platformio.ini `lib_deps` and `tool/build.cmd`. <br/>
+<img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/screenshot2.jpg" width="640px" />
+
 ## Versioning
 
 v1.0 - Released.
