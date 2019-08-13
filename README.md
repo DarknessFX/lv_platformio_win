@@ -18,6 +18,8 @@ VSCode Windows project template that allows develop C++ code for Windows (build,
 
 This project is based on littlevgl/lv_platformio @ https://github.com/littlevgl/lv_platformio , adapted to be used with MSVC compiler/linker and to allow VSCode Windows to run both CPP Win Native and PlatformIO.
 
+<img src="https://github.com/DarknessFX/lv_platformio_win/blob/master/.git_img/screenshot.jpg" width="640px" />
+
 ## Getting started
 
 ### Depends
